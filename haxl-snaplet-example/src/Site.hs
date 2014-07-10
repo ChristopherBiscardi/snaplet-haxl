@@ -31,10 +31,10 @@ import           Snap.Util.FileServe
 ------------------------------------------------------------------------------
 import           Application
 
-instance HasHaxl (Handler App (HaxlEnv v)) where
-  getHaxlState = do
-    ss <- getSnapletState
-    return (view snapletValue ss)
+-- instance HasHaxl (Handler App (HaxlEnv v)) where
+--   getHaxlState = do
+--     ss <- getSnapletState
+--     return (view snapletValue ss)
 
 -- getsSnapletState snapletValue
 
