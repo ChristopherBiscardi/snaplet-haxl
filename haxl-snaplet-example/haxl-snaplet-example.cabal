@@ -39,8 +39,7 @@ Executable haxl-snaplet-example
     postgresql-simple         >= 0.4.2.3,
     hashable                  >= 1.2.2.0,
     async                     >= 2.0.1.4,
-    transformers              >= 0.3.0.0,
-    data-lens                 >= 2.10.0
+    transformers              >= 0.3.0.0
 
   if flag(old-base)
     build-depends:

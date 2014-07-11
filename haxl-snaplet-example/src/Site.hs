@@ -11,11 +11,9 @@ module Site
 
 ------------------------------------------------------------------------------
 import           Control.Applicative
-import           Control.Lens
 import           Control.Monad.IO.Class     (liftIO)
 import           Control.Monad.State
 import           Data.ByteString            (ByteString)
-import           Data.Lens.Common           (getL)
 import           Data.Maybe                 (fromMaybe)
 import qualified Data.Text                  as T
 import           Database.PostgreSQL.Simple

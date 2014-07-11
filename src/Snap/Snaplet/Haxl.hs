@@ -1,6 +1,6 @@
 {-# LANGUAGE FlexibleInstances #-}
-{-# LANGUAGE GADTs             #-}
 {-# LANGUAGE OverloadedStrings #-}
+
 module Snap.Snaplet.Haxl
        (haxlInit
        ,withHaxl
