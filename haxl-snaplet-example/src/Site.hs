@@ -30,28 +30,13 @@ import           Snap.Snaplet.Heist
 import           Snap.Util.FileServe
 ------------------------------------------------------------------------------
 import           Application
-
--- instance HasHaxl (Handler App (HaxlEnv v)) where
---   getHaxlState = do
---     ss <- getSnapletState
---     return (view snapletValue ss)
-
--- getsSnapletState snapletValue
-
-instance MonadState (HaxlEnv v) (Handler b (HaxlEnv v)) where
-  get = do
-            ss <- getSnapletState
-            return $ view snapletValue ss
-
-
-
 ------------------------------------------------------------------------------
 -- | The application's routes.
 routes :: [(ByteString, Handler App App ())]
 routes = [("",          serveDirectory "static")
          ,("testhaxl",  with haxl $ haxlHandler)]
 
---haxlHandler :: Handler b (HaxlEnv c) ()
+haxlHandler :: Handler b (HaxlEnv ()) ()
 haxlHandler = do
   person <-  withHaxl $ getPerson (PersonId 1)
   writeText $ maybe "" (first_name) person
