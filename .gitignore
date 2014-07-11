@@ -3,3 +3,4 @@ cabal.sandbox.config
 dist/
 src/Data/
 vagrant/
+snaplet-haxl-*-docs/
