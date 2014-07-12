@@ -9,9 +9,9 @@ module Snap.Snaplet.Haxl
 
 import           Control.Monad.CatchIO      (MonadCatchIO)
 import           Control.Monad.Trans.Reader (ReaderT, ask)
-import           Haxl.Core
-import qualified Haxl.Core.Env              as E
-import           Snap
+import           Haxl.Core                  (GenHaxl, runHaxl)
+import qualified Haxl.Core.Env              as E (Env)
+import           Snap                       (Handler, SnapletInit, get, liftIO, makeSnaplet)
 
 data HaxlEnv u = HaxlEnv {en :: E.Env u}
 
