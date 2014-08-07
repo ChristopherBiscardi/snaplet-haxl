@@ -2,7 +2,7 @@
 -- documentation, see http://haskell.org/cabal/users-guide/
 
 name:                snaplet-haxl
-version:             0.0.0.1
+version:             0.0.0.2
 synopsis:            Snaplet for Facebook's Haxl
 description:         A Snaplet for the integration of Haxl DataSources with Snap.
 homepage:            https://github.com/ChristopherBiscardi/snaplet-haxl
