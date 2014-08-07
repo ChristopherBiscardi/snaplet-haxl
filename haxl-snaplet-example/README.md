@@ -11,6 +11,14 @@ henv <- liftIO $ initEnv (stateSet pgstate stateEmpty) ()
 hax <- nestSnaplet "" haxl $ haxlInit henv
 ```
 
-# It's not working?
+# Does it work?
 
-Yea, well. It doesn't right now. Check the issues. PRs accepted.
+Yes! Give the example a try!
+
+```
+cd haxl-snaplet-example
+cabal sandbox init
+cabal install --dependencies-only
+cabal build
+./dist/build/haxl-snaplet-example/haxl-snaplet-example
+```
